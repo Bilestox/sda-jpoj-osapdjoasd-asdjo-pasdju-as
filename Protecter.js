@@ -20,7 +20,7 @@ client.on('ready', () => {
   client.user.setActivity('.help Protection | Protection 100%') 
   })
 
-client.login(TOKEN).catch(err => {
+client.login(process.env.token).catch(err => {
   console.error("[ DISCORD API ] INVIELD TOKEN")
 })
 
